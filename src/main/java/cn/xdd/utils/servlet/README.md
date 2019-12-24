@@ -4,7 +4,7 @@
 	<li><h3>@target: 简化Servlet开发</h3></li>
 	<li><h3>@version: 1.0.1-SNAPSHOT</h3></li>
 	<li><h3>@date: Tue Dec 24 14:53:39 CST 2019</h3></li>
-</ul><hr/><hr/>
+</ul><hr/>
 
 <h2>简介</h2>
 <b>Servlet开发简化工具，能将请求映射到方法级别。</b>
