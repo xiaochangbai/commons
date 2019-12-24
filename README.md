@@ -16,12 +16,12 @@
 		<tr>
 			<td>DBUtils</td>
 			<td>数据库的连接操作类（包含获取链接、事务等操作）</td>
-			<td><a href="cn/xdd/utils">进入</a></td>
+			<td><a href="/cn/xdd/utils">进入</a></td>
 		</tr>
 		<tr>
 			<td>BaseServlet</td>
 			<td>Serlvet方法级别的请求映射</td>
-			<td><a href="cn/xdd/utils/servlet">进入</a></td>
+			<td><a href="/cn/xdd/utils/servlet">进入</a></td>
 		</tr>
 	</table>
 	
