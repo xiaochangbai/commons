@@ -1,10 +1,12 @@
-<h1>Java开发中常用到的一些工具类</h1>
+<h1>Java开发中常用的一些工具类</h1>
 <ul>
-	<li><h3>@author: 全体程序员</h3></li>
+	<li><h3>@author: 全体开发人员</h3></li>
 	<li><h3>@target: 简化Java开发</h3></li>
 	<li><h3>@version: 1.0.1-SNAPSHOT</h3></li>
-	<li><h3>@date: Tue Dec 24 14:53:39 CST 2019 ~~~~~ Future</h3></li>
+	<li><h3>@date: 2019年12月25 ~~~~~ Future</h3></li>
 </ul><hr/>
+
+<h1>Good Good Study, Day Day Up!</h1>
 
 <br/><h2><a href="">>>>点击下载<<<</a></h2><br/>
 

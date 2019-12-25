@@ -1,9 +1,10 @@
-package cn.xdd.utils;
+package cn.xdd.utils.db;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -11,6 +12,9 @@ import java.util.Properties;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import cn.xdd.utils.db.handle.BeanHandle;
+import cn.xdd.utils.db.handle.ResultHandle;
 
 /**
  *@author: xchb
@@ -126,8 +130,64 @@ public class DBUtils {
 		}
 	}
 	
-	public static void main(String[] args) throws SQLException {
-		DBUtils.getConnection();
+	/**
+	 * 关闭没有事务的连接（事务连接会在commitTransaction()和rollbackTransaction()方法中关闭，此处不需要处理）
+	 * @param connection
+	 * @throws SQLException
+	 */
+	public static void closeConnection(Connection connection) throws SQLException {
+		if(connection == null)return;
+		if(connection != con.get())connection.close();
 	}
+	
+	
+	/**
+	 * 对数据库中表的更新、添加、修改等操作
+	 * @param con
+	 * @param sql
+	 * @param param
+	 * @return
+	 * @throws SQLException
+	 */
+	public static int update(Connection con,String sql,Object ...param) throws SQLException {
+		PreparedStatement pst = con.prepareStatement(sql);
+		for(int i=0;i<param.length;i++) {
+			pst.setObject(i+1, param[i]);
+		}
+		return pst.executeUpdate();
+	}
+	
+	public static int update(String sql,Object ...param) throws SQLException {
+		PreparedStatement pst = getConnection().prepareStatement(sql);
+		for(int i=0;i<param.length;i++) {
+			pst.setObject(i+1, param[i]);
+		}
+		return pst.executeUpdate();
+	}
+	
+	
+	/**
+	 * 数据库的查询操作
+	 * @param <T>
+	 * @param connection
+	 * @param rt
+	 * @param sql
+	 * @param param
+	 * @return
+	 * @throws SQLException
+	 * @throws InstantiationException
+	 * @throws IllegalAccessException
+	 */
+	public static <T> T query(Connection connection,ResultHandle<T> rt,String sql,Object ...param) throws SQLException, InstantiationException, IllegalAccessException {
+		PreparedStatement pst = connection.prepareStatement(sql);
+		for(int i=0;i<param.length;i++) {
+			pst.setObject(i+1, param[i]);
+		}
+		ResultSet resultSet = pst.executeQuery();
+		return rt.handel(resultSet);
+	}
+	
+	
+	
 
 }
