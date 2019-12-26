@@ -9,7 +9,7 @@
 <b>对数据库连接、事务。SQL支持：增、删、改、查询结果映射等</b>
 <hr/><br/>
 
-<h3>目前所支持的查询结果映射器包括：JavaBean、List<Bean>、Map、List<Map></h3>
+<h3>目前所支持的查询结果映射器包括：JavaBean、List&#60;Bean&#62;、Map、List&#60;Map&#62;</h3>
 <b>原理：</b>
 	<ul>
 		<li>
