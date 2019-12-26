@@ -1,11 +1,21 @@
 package cn.xdd.utils;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 import org.junit.Test;
 
 import cn.xdd.utils.db.DBUtils;
 import cn.xdd.utils.db.handle.BeanHandle;
+import cn.xdd.utils.db.handle.ListBeanHandle;
+import cn.xdd.utils.db.handle.ListMapHandle;
+import cn.xdd.utils.db.handle.MapHandle;
 import cn.xdd.utils.po.Student;
 import cn.xdd.utils.po.User;
 
@@ -28,9 +38,9 @@ public class DBUtilsTest {
 	
 	@Test
 	public void testQuery() throws InstantiationException, IllegalAccessException, SQLException {
-		String sql = "select * from student where id = ?";
-		Object[] param = {2};
-		Student query = DBUtils.query(DBUtils.getConnection(), new BeanHandle<Student>(Student.class), sql, param);
+		String sql = "select * from student";
+		Object[] param = {};
+		List<Map<String, ?>> query = DBUtils.query(DBUtils.getConnection(), new ListMapHandle<>(), sql, param);
 		System.out.println(query);
 	}
 }
