@@ -24,8 +24,13 @@ import cn.xdd.utils.po.User;
  *@date: 2019年12月25日下午6:10:55
  *@description: good good study,day day up
  */
-public class DBUtilsTest {
+public class DBUtilsTest extends A{
 
+	//@Override
+	public void hello() {
+		
+	}
+	
 	@Test
 	public void testUpdate() throws SQLException {
 		String sql = "update student set password=? where id=?";
@@ -42,5 +47,18 @@ public class DBUtilsTest {
 		Object[] param = {};
 		List<Map<String, ?>> query = DBUtils.query(DBUtils.getConnection(), new ListMapHandle<>(), sql, param);
 		System.out.println(query);
+	}
+	
+	@Test
+	public void t() {
+		float [][] f1 = {{1.2f,2.4f},{4.5f,5.6f}};
+		Object o = f1;
+		f1[1] = (float[]) o;
+		float a =1.3f;
+	}
+}
+class A{
+	private void hello() {
+		
 	}
 }
