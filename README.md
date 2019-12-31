@@ -8,9 +8,6 @@
 
 <h1>Good Good Study, Day Day Up!</h1>
 
-<br/><h2><a href="results/xdd-commons-1.0.1.jar">>>>点击下载<<<</a></h2><br/>
-
-
 <h2>工具链接：</h2>
 	<table>
 		<tr>
