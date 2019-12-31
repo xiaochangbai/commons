@@ -14,12 +14,12 @@ public class BinaryTreeTest {
 
 	@Test
 	public void test() {
-		BinaryTree<String> bt = new BinaryTree<String>();
-		bt.add("AA");
-		bt.add("ab");
-		bt.add("CCC");
-		bt.add("11");
+		BinaryTree<Integer> bt = new BinaryTree<Integer>();
+		bt.add(33);
+		bt.add(1);
+		bt.add(2);
+		bt.add(30);
 		System.out.println(Arrays.toString(bt.toArrays()));
-		Assert.assertTrue(bt.isExits("CCC"));
+		Assert.assertTrue(bt.isExits(1));
 	}
 }

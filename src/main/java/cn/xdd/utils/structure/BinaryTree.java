@@ -66,14 +66,16 @@ public class BinaryTree<T> {
 
 		}
 
+		@SuppressWarnings("unchecked")
 		public boolean isExit(T ce) {
-			if(((Comparable<Object>) ce).compareTo(this.data) == 0) {
+			Comparable<T> comparable = (Comparable<T>) ce;
+			if(comparable.compareTo(this.data) == 0) {
 				return true;
 			}
 			//大于当前节点的数据，往右边查找
-			if(((Comparable<Object>) ce).compareTo(this.data) > 0 && this.right != null) {
+			if(comparable.compareTo(this.data) > 0 && this.right != null) {
 				return this.right.isExit(ce);
-			}else if(((Comparable<Object>) ce).compareTo(this.data) < 0 && this.left != null){
+			}else if(comparable.compareTo(this.data) < 0 && this.left != null){
 					return this.left.isExit(ce);
 			}
 			return false;
@@ -132,9 +134,17 @@ public class BinaryTree<T> {
 		if (!(t instanceof Comparable<?>)) {
 			throw new RuntimeException("所需数据格式类必要实现Comparable接口");
 		}
-	
 		//比较
 		return this.root.isExit(t);
-
 	}
+	
+	/**
+	 * 打印二叉树
+	 */
+	/*
+	 * @Override public String toString() { StringBuffer sb = new StringBuffer();
+	 * if(this.root == null) { return null; } double treeHeight =
+	 * Math.log(count)/Math.log(2); int height = (int) (treeHeight/10 ==
+	 * 0?treeHeight:treeHeight+1); this.root.toString(); return null; }
+	 */
 }
