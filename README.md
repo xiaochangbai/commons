@@ -33,7 +33,7 @@
 		<tr>
 			<td>数据结构</td>
 			<td>包含二叉树、链表等数据结构的实现</td>
-			<td><a href="https://github.com/XDD288/commons/tree/master/src/main/java/cn/xdd/utils/struture">进入</a></td>
+			<td><a href="https://github.com/XDD288/commons/tree/master/src/main/java/cn/xdd/utils/structure">进入</a></td>
 		</tr>
 	</table>
 	
