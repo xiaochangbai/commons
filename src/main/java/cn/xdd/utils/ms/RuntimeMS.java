@@ -17,5 +17,6 @@ public class RuntimeMS {
 		//1794M
 		//123
 		//121M
+		System.out.println(run.availableProcessors());
 	}
 }
