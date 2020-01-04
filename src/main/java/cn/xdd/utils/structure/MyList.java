@@ -1,5 +1,6 @@
 package cn.xdd.utils.structure;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -12,8 +13,9 @@ import java.util.ListIterator;
  * @date: 2020年1月3日下午8:59:24
  * @description: good good study,day day up 自己实现的简单List(基于数组动态扩容)
  */
-public class MyList<T> implements List<T> {
+public class MyList<T> implements List<T>,Serializable,Cloneable{
 
+	private static final long serialVersionUID = 1L;
 	private final static float AS = 0.75f; // 当保存的数据量达到整个数组的75%之后就执行扩容操作。
 	private final static float FIRSTADD = 0.5f; // 第一次扩容比率
 	private final static Integer ARRAYS_INIT_SISE = 10;

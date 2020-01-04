@@ -3,6 +3,7 @@ package cn.xdd.utils.structure;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import java.rmi.server.RMIClassLoader;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -117,5 +118,28 @@ public class MyListTest {
 		list.add("dddd");
 		List<String> subList = list.subList(1, 1);
 		System.out.println(subList);
+	}
+	
+	@Test
+	public void testArrayList() {
+		ArrayList<String> list = new ArrayList<String>(2);
+		list.add("asdf");
+		list.add("asdf");
+		list.add("asdf");
+		list.add("asdf");
+		list.add(null);
+		list.add(null);
+		assertEquals(list.size(), 6);
+	}
+	
+	@Test
+	public void testHashCode() {
+		Object a = "aaa";
+		Object b = "aaa";
+		Object bb = new String("aaa");
+		System.out.println("a = "+a.hashCode());
+		System.out.println("b = "+b.hashCode());
+		System.out.println("bb = "+bb.hashCode());
+		System.out.println((a==b)+" |||| "+(b==bb));
 	}
 }
