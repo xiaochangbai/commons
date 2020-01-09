@@ -16,8 +16,7 @@ import cn.xdd.utils.db.DBUtils;
  *@author: xchb
  *@param <T>
  *@date: 2019年12月26日下午12:34:57
- *@description: good good study,day day up
- * Map结果处理器
+ *@description:Map结果处理器
  */
 public class MapHandle<T extends Map<String, ?>> implements ResultHandle<T> {
 

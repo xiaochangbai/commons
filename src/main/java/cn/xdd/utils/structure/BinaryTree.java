@@ -5,8 +5,7 @@ import java.util.Arrays;
 /**
  * @author: xchb
  * @date: 2019年12月30日下午10:42:32
- * @description: good good study,day day up 
- * 简单的二叉树
+ * @description: 简单的二叉树
  */
 public class BinaryTree<T> {
 

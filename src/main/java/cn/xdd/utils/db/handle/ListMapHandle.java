@@ -15,9 +15,7 @@ import org.slf4j.LoggerFactory;
  * @author: xchb
  * @param <T>
  * @date: 2019年12月26日下午2:34:04
- * @description: good good study,day day up
- * 
- * List<Map>结果处理器
+ * @description: List<Map>结果处理器
  */
 public class ListMapHandle<T extends List<Map<String, ?>>> implements ResultHandle<T> {
 

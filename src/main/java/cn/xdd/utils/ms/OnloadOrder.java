@@ -3,8 +3,7 @@ package cn.xdd.utils.ms;
 /**
  *@author: xchb
  *@date: 2020年1月2日下午10:22:51
- *@description: good good study,day day up
- *类的加载顺序
+ *@description: 类的加载顺序
  */
 
 class Person{

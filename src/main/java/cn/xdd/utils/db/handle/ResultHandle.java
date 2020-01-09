@@ -7,9 +7,7 @@ import java.sql.SQLException;
  *@author: xchb
  *@param <T>
  *@date: 2019年12月25日下午6:20:48
- *@description: good good study,day day up
- *
- *结果处理器规范
+ *@description: 结果处理器规范
  */
 public interface ResultHandle<T>{
 

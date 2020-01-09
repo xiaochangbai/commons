@@ -19,8 +19,7 @@ import cn.xdd.utils.db.handle.ResultHandle;
 /**
  *@author: xchb
  *@date: 2019年12月16日下午3:26:01
- *@description: good good study,day day up
- *JDBC工具类
+ *@description: JDBC工具类
  */
 public class DBUtils {
 	

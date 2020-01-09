@@ -19,8 +19,7 @@ import cn.xdd.utils.db.DBUtils;
 /**
  *@author: xchb
  *@date: 2019年12月26日上午11:50:29
- *@description: good good study,day day up
- *JavaBean和ResultSet结果集的映射器
+ *@description: JavaBean和ResultSet结果集的映射器
  */
 public class ResultSetBeanMapping {
 	

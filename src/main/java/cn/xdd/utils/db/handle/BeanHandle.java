@@ -21,8 +21,7 @@ import cn.xdd.utils.db.DBUtils;
  *  @param <T>
  *  @param <T>
  *	@date: 2019年12月25日下午6:27:31
- *	@description: good good study,day day up
- *	JavaBean处理器
+ *	@description: JavaBean处理器
  */
 
 public class BeanHandle<T> implements ResultHandle<T> {

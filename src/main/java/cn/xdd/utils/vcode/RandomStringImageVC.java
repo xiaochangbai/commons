@@ -24,8 +24,7 @@ import org.slf4j.LoggerFactory;
 /**
  *@author: xchb
  *@date: 2019年12月29日下午7:37:38
- *@description: good good study,day day up
- *随机字符串图片验证码生成工具类
+ *@description: 随机字符串图片验证码生成工具类
  */
 public class RandomStringImageVC {
 	

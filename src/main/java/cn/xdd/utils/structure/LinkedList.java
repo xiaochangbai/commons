@@ -5,10 +5,16 @@ import java.util.Arrays;
 /**
  * @author: xchb
  * @date: 2019年12月31日下午6:09:22
- * @description: good good study,day day up 链表的简单实现
+ * @description: 链表的简单实现
  */
 public class LinkedList<T> {
 
+	
+	/**
+	 * 节点类
+	 * @author XDD
+	 *
+	 */
 	private class Node {
 		// 上一个节点
 		private Node next;

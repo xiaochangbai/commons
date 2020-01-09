@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * @author: xchb
  * @date: 2019年12月23日下午6:27:52
- * @description: g@SuppressWarnings("serial") ood good study,day day up
+ * @description: good good study,day day up
  */
 public class MethodInfo implements Serializable {
 

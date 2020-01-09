@@ -17,7 +17,7 @@ import javax.imageio.ImageIO;
 /**
  * @author: xchb
  * @date: 2019年12月30日下午4:07:00
- * @description: good good study,day day up 随机算式图片验证码生成工具类
+ * @description: 随机算式图片验证码生成工具类
  */
 public class RandomFormulaImageVC {
 

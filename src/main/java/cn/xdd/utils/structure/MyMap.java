@@ -10,8 +10,7 @@ import java.util.Set;
  * @param <K>
  * @param <V>
  *@date: 2020年1月4日下午10:37:26
- *@description: good good study,day day up
- *Map集合的简单实现：数组+链表
+ *@description: Map集合的简单实现：数组+链表
  */
 public class MyMap<K, V> implements Serializable,Cloneable{
 

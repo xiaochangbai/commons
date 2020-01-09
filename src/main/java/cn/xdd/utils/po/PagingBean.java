@@ -6,9 +6,7 @@ import java.util.List;
  *@author: xchb
  * @param <T>
  *@date: 2019年12月26日下午11:04:40
- *@description: good good study,day day up
- *
- *分页参数对象
+ *@description: 分页参数对象
  */
 public class PagingBean<T> {
 

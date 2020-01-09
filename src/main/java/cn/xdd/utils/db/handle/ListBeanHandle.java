@@ -15,9 +15,7 @@ import cn.xdd.utils.db.DBUtils;
  *@author: xchb
  *@param <T>
  *@date: 2019年12月26日下午12:05:53
- *@description: good good study,day day up
- *
- *List<Bean>处理器
+ *@description:List<Bean>处理器
  */
 public class ListBeanHandle<T extends List<?>> implements ResultHandle<T> {
 	

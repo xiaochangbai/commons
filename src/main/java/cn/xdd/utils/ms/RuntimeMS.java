@@ -4,8 +4,6 @@ package cn.xdd.utils.ms;
  *@author: xchb
  *@date: 2019年12月30日下午10:11:30
  *@description: good good study,day day up
- *
- *
  */
 public class RuntimeMS {
 	public static void main(String[] args) {

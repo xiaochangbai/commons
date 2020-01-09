@@ -11,7 +11,7 @@ import java.util.ListIterator;
 /**
  * @author: xchb
  * @date: 2020年1月3日下午8:59:24
- * @description: good good study,day day up 自己实现的简单List(基于数组动态扩容)
+ * @description: 自己实现的简单List(基于数组动态扩容)
  */
 public class MyList<T> implements List<T>,Serializable,Cloneable{
 
